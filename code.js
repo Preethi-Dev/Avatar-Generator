@@ -18,7 +18,7 @@ if (selectedNodes === 0) {
 
   for (let i = 0; i < selectedNodes; i++) {
     //pull out the an hotlink in thumb size
-    const img = await json[i].urls.thumb;
+    const img = await json[i].urls.regular;
 
     // Get an image from a URL
     figma.createImageAsync(img).then(async (image) => {
